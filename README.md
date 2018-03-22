@@ -36,5 +36,3 @@ Your Robot
 * The bout starts when the Run button is pressed on both robots simultaneously.
 * BOTH ROBOTS MUST HOLD STILL FOR 3 SECONDS - failure to do this is an automatic disqualification.
 * If no robot is pushed outside within 3 minutes, the match is a draw.
-
-[Moodle](https://moodle.telt.unsw.edu.au/mod/page/view.php?id=1530948)
