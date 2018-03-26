@@ -19,3 +19,5 @@ gs  = GyroSensor();		assert gs.connected
 gs.mode = 'GYRO-RATE'	# Changing the mode resets the gyro
 gs.mode = 'GYRO-ANG'	# Set gyro mode to return compass angle
 """
+
+#test
