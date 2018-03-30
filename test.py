@@ -38,6 +38,26 @@ def right():
     leftMotor.duty_cycle_sp = 75
     rightMotor.duty_cycle_sp = -75
 
+#===================== Button ======================#
+
+def testButton():
+    while not btn.any():
+        if btn.left:
+            print("Left")
+        elif btn.right:
+            print("Right")
+
+    '''
+    print(btn.buttons_pressed)
+    
+    while not btn.check_buttons(buttons=['left','right']):
+        if btn.left:
+            print("Left")
+        elif btn.right:
+            print("Right")
+         
+    '''
+    
 #====================== Main =======================#
 
 btn = Button()
@@ -52,5 +72,13 @@ while btn.any():
         left()
     elif mode == "right":
         right()
+    elif mode == "button":
+        testButton()
+    elif mode == "exit" or mode == "stop":
+        break
     else:
         print("Invalid input")
+
+    print("Completed")
+
+print("End")
