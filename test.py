@@ -61,24 +61,16 @@ def testButton():
 #====================== Main =======================#
 
 btn = Button()
+clicked = False
+while (clicked == False):
+    if btn.left:
+        print("Left")
+        clicked = True
+    elif btn.right:
+        print("Right")
+        clicked = True
+    print("waiting")
+    time.sleep(0.1)
 
-while btn.any():
-    mode = input("Enter mode: ")
-    if mode == "straight":
-        moveStraight()
-    elif mode == "stop":
-        stop()
-    elif mode == "left":
-        left()
-    elif mode == "right":
-        right()
-    elif mode == "button":
-        testButton()
-    elif mode == "exit" or mode == "stop":
-        break
-    else:
-        print("Invalid input")
-
-    print("Completed")
 
 print("End")
